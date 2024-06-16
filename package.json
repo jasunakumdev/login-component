@@ -1,7 +1,7 @@
 {
   "name": "login-lit-component",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/login-lit-component.umd.js",
   "module": "dist/login-lit-component.es.js",
