@@ -1,11 +1,13 @@
 # Login Component
 
-[![npm version](https://img.shields.io/npm/v/login-lit-element.svg?color=blue)](https://www.npmjs.com/package/login-lit-component)
-[![License](https://img.shields.io/npm/l/login-lit-element.svg)](https://github.com/jasunakumdev/login-component/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/login-lit-component.svg?color=blue)](https://www.npmjs.com/package/login-lit-component)
+[![License](https://img.shields.io/npm/l/login-lit-component.svg)](https://github.com/jasunakumdev/login-component/blob/master/LICENSE)
 
 <p align="center">
   <br>
   <img width="400" src="./public/images/example-1.png" alt="Login page with background image">
+  <br/>
+  <br/>
   <img width="400" src="./public/images/example-2.png" alt="Login page without background image">
   <br>
   <br>
@@ -139,10 +141,10 @@ import login-lit-component
 ```
 
 ```
-<login-screen
+<login-component
    id="login"
    errorMessage="Invalid username or password!!"
-></login-screen>
+></login-component>
 ```
 
 Bind Event
@@ -222,6 +224,5 @@ app.component.html
   (signin)="handleSignIn($event)"
   errorMessage="Invalid username and password"
 >
-```
-
 </login-component>
+```
