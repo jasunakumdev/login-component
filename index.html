@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/login-screen.ts"></script>
+  </head>
+  <body style="margin: 0px">
+    <login-screen
+      id="login"
+      errorMessage="Invalid username or password!!"
+    ></login-screen>
+
+    <script>
+      const loginScreen = document.querySelector('#login')
+      loginScreen.addEventListener('signin', handleSignIn)
+      function handleSignIn(event) {
+        const { email, password } = event.detail
+        // Your authentication logic here
+        if (email === 'jasu@gmail.com' && password === 'Test@123') {
+          loginScreen.invalidCredentials = false
+          console.log('Authentication successful')
+          // Proceed with authenticated user
+        } else {
+          loginScreen.invalidCredentials = true
+        }
+      }
+    </script>
+  </body>
+</html>
